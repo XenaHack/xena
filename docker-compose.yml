@@ -1,0 +1,22 @@
+version: '2' 
+
+services:
+  ui:
+    build: ui
+    ports:
+      - "4200:4200" 
+    restart: always
+
+  api:
+    build: api
+    ports:
+      - "3000:3000"
+    links:
+      - db 
+    restart: always
+
+  db:
+    image: mongo:3 
+    ports:
+      - "27017:27017" 
+    restart: always
