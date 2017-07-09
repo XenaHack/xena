@@ -13,4 +13,5 @@ import java.util.List;
 public interface ProjectRepository extends MongoRepository<Project, String> {
     public Project findByTitle(String title);
     public List<Project> findByGithubUrl(String githubUrl);
+    List<Project> findByTagsIn(List<String> tags);
 }
