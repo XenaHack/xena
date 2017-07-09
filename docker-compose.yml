@@ -5,18 +5,21 @@ services:
     build: ui
     ports:
       - "4200:4200" 
-    restart: always
+    # restart: always
 
-  api:
-    build: api
+  projectService:
+    build: projectService
     ports:
       - "3000:3000"
     links:
       - db 
-    restart: always
-
+    # restart: always
+  feedService:
+    build: feedService
+    ports:
+      - "3001:3001"
   db:
     image: mongo:3 
     ports:
       - "27017:27017" 
-    restart: always
+    # restart: always
