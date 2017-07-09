@@ -18,6 +18,9 @@ public class Project {
     public String title;
     public String githubUrl;
 
+
+    public Project(){}
+
     public Project(String title, String githubUrl ){
         this.title = title;
         this.githubUrl = githubUrl;

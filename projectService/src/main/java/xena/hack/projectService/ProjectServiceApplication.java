@@ -6,18 +6,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjectServiceApplication implements CommandLineRunner{
+public class ProjectServiceApplication {
 
-	@Autowired
-	private ProjectRepository repository;
 
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws Exception{
 		SpringApplication.run(ProjectServiceApplication.class, args);
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
-
 		// save a couple of projects
 		repository.deleteAll();
 		repository.save(new Project("Project-ABC", "www.blah.com"));
@@ -31,5 +29,5 @@ public class ProjectServiceApplication implements CommandLineRunner{
 			System.out.println(proj);
 		}
 		System.out.println();
-	}
+	}*/
 }
