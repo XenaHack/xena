@@ -11,8 +11,7 @@ import java.util.List;
  * Created by courtneydavis on 7/9/17.
  */
 
-@Component
-@ConfigurationProperties
+
 @RestController
 public class ProjectController {
 
