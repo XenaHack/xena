@@ -5,6 +5,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * Created by courtneydavis on 7/9/17.
  */
@@ -15,17 +17,22 @@ import org.springframework.web.bind.annotation.*;
 public class ProjectController {
 
     @Autowired
-    private ProjectRepository repository;
+    private ProjectService projService;
 
 
-    @RequestMapping(value = "/project", method = RequestMethod.POST)
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
     public Project create(@RequestBody Project project) {
-        return repository.save(project);
+        return projService.create(project);
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = "/{projectId}")
+    @RequestMapping( value = "/get/{projectId}", method = RequestMethod.GET)
     public Project get(@PathVariable String projectId) {
-        return repository.findOne(projectId);
+        return projService.get(projectId);
+    }
+
+    @RequestMapping(value = "/get/tags/[{tags}]", method = RequestMethod.GET)
+    public List<Project> getProjectsFromTags(@PathVariable List<String> tags) {
+        return projService.getProjectsFromTags(tags);
     }
 
 }
