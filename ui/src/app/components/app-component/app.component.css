@@ -1,6 +1,90 @@
-nav {
+#navcontainer{
 	background-color: rgb(67, 82, 159);
+	margin:0;
+	padding:0;
+	top:0;
+	width:100%;
+	height:80px;
+
+}
+
+h4{
+	display:inline-block;
+}
+
+nav {
 	color: white;
-	padding:15px;
 	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
+	font-size:135%;
+}
+
+ul.rightMenu{
+	position:relative;
+	float:right;
+	display: block;
+	text-decoration: none;
+}
+
+ul.rightMenu>li{
+	display:inline-block;
+	margin-left:100px;
+	padding:8px;
+
+}
+
+li > a, li>div>a{
+	text-decoration: none;
+}
+
+li>a{
+	color:white;
+}
+
+li>div>a{
+	color:#333;
+}
+
+li>div{
+	margin-top:10px;
+}
+
+ul.rightMenu>li:hover{
+	border-bottom: 4px solid pink;
+}
+
+.dropdown:hover .dropcontent, 
+.dropcontent a{
+	display: block;
+} 
+
+.dropdown:hover .dropcontent{
+	position: absolute;
+}
+
+.dropcontent{
+	display: none;
+	position: absolute;
+}
+
+.dropcontent:hover{
+	display:block;
+	position: relative;
+}
+
+.dropcontent{
+	background-color: rgba(255,255,255,0.7);
+	font-size: 65%;
+	color: #333;
+	padding:3px;
+	font-weight: bold;
+}
+
+.dropcontent a{
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.dropcontent a:hover {
+	color: pink;
 }

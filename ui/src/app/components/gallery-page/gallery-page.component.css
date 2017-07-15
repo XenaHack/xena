@@ -1,0 +1,20 @@
+*{
+	border: dotted 1px #999;
+}
+
+.container{
+	width:90%;
+	height:100%;
+	margin: 0 auto;
+}
+
+
+.splash{
+	
+}
+
+.splash > img{
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}

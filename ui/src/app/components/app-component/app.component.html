@@ -1,4 +1,23 @@
-<nav class="navbar navbar-fixed-top navbar-default">
-  <h4 class="navbar-header">Xena</h4>
-</nav>
+<div id=navcontainer>
+	<nav class=navbar navbar-fixed-top>
+	  <h4 class=navbar-header routerLink="/"  routerLinkActive="active">Xena</h4>
+
+	  <ul class=rightMenu>
+	  	<li><a>Profile</a></li>
+	  	<li class=dropdown><a  routerLink="/gallery"  routerLinkActive="active">Gallery</a>
+	  		<div class=dropcontent>
+	  			<a href="#">Middle School</a>
+	  			<a href="#">High School</a>
+	  			<a href="#">College</a>
+	  			<a href="#">Early Professional</a>
+	  			<a href="#">Professional</a>
+	  		</div>
+	  	</li>
+	  	<li><a href="#">Dashboard</a></li>
+	  	</ul>
+
+	</nav>
+</div>
+
+<router-outlet></router-outlet>
 
