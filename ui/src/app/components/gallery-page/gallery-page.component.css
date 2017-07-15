@@ -15,6 +15,10 @@
 
 .splash > img{
 	height:100%;
-	width:100%;
 	overflow: hidden;
+}
+
+.projIcon{
+	height:100px;
+	width:100px;
 }
