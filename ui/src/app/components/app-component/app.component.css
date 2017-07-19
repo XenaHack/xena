@@ -1,0 +1,58 @@
+h4{
+	display:inline-block;
+}
+
+nav {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+li > a, li>div>a{
+	text-decoration: none;
+}
+
+.navbar-nav>li{
+	margin: 0 15px;
+}
+
+ul.navbar-right>li:hover{
+	margin-bottom: -15px;
+	border-bottom: 4px solid pink;
+}
+
+/*.dropdown:hover .dropcontent, 
+.dropcontent a{
+	display: block;
+} 
+
+.dropdown:hover .dropcontent{
+	position: absolute;
+}
+
+.dropcontent{
+	display: none;
+	position: absolute;
+}
+
+.dropcontent:hover{
+	display:block;
+	position: relative;
+}
+
+.dropcontent{
+	background-color: rgba(255,255,255,0.7);
+	font-size: 65%;
+	color: #333;
+	padding:3px;
+	font-weight: bold;
+}
+
+.dropcontent a{
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.dropcontent a:hover {
+	color: pink;
+}
+*/
