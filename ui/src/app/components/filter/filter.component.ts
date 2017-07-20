@@ -7,7 +7,7 @@ import { Component, ElementRef, OnInit } from '@angular/core';
 })
 export class FilterComponent implements OnInit {
 
-	showFilter: false;
+	showFilter: boolean = true;
 
   constructor(
   	public element: ElementRef) {
@@ -15,11 +15,12 @@ export class FilterComponent implements OnInit {
 	}
 
   ngOnInit() {
-  	var el = this.element.nativeElement;
-    console.log(el);
+  	// var el = this.element.nativeElement;
+    // console.log(el);
   }
 
-  expandFilter(){
+  expandFilter() {
+    this.showFilter = !this.showFilter;
 
   }
 
