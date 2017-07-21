@@ -1,0 +1,23 @@
+h4{
+	display:inline-block;
+	cursor: pointer;
+}
+
+nav {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+li > a, li>div>a{
+	text-decoration: none;
+}
+
+.navbar-nav>li{
+	margin: 0 15px;
+}
+
+ul.navbar-right>li:hover{
+	margin-bottom: -15px;
+	border-bottom: 4px solid pink;
+}
+

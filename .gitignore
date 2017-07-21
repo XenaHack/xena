@@ -2,3 +2,6 @@
 .idea/workspace.xml
 .idea/xena.iml
 projectService/.idea/
+node_modules
+npm-debug.log
+.DS_Store

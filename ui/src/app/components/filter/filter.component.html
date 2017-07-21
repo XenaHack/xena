@@ -1,0 +1,31 @@
+<button id=showFilter (click)=expandFilter()>Filter</button>
+
+
+<div class="filterContainer" [ngClass]="{'expandHeight': showFilter}" (click)="showFilter = !showFilter" >
+	<div>
+		<h4>Level</h4>
+		<input type="checkbox"/>Middle School
+		<input type="checkbox"/>High School
+		<input type="checkbox"/>Early Professional
+		<input type="checkbox"/>Professional
+	</div>
+
+
+
+	<div>
+		<h4>Tech</h4>
+		<input type="checkbox"/>Angular
+		<input type="checkbox"/>AngularJS
+		<input type="checkbox"/>React
+		<input type="checkbox"/>Java
+		<input type="checkbox"/>Springboot
+		<input type="checkbox"/>MongoDB
+		<input type="checkbox"/>Elasticsearch	
+		<input type="checkbox"/>Node
+		<input type="checkbox"/>ExpressJS
+		<input type="checkbox"/>Docker
+
+	</div>
+
+</div>
+

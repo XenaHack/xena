@@ -1,0 +1,14 @@
+*{
+	border: dotted 1px #999;
+}
+
+.expandHeight{
+    height: 200px;
+    opacity: 1;
+}
+
+.filterContainer{
+	display:none;
+    transition: 0.4s all ease;
+    /*opacity: 0;*/
+}
