@@ -33,11 +33,11 @@ public class PostController {
     }
 
     @RequestMapping(value = "/get/tags/[{tags}]", method = RequestMethod.GET)
-    public List<Post> getProjectsFromTags(@PathVariable List<String> tags) {
+    public List<Post> getPostFromTags(@PathVariable List<String> tags) {
         return postService.getPostsFromTags(tags);
     }
 
-    @RequestMapping(value = "/get/project/[{postId}]", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/get/post/[{postId}]", method = RequestMethod.DELETE)
     public void deletePost(@PathVariable String postId) {
         postService.deletePost(postId);
     }

@@ -18,9 +18,9 @@ public class Project {
     @Id
     public String id;
 
-    @TextIndexed public String title;
-    @TextIndexed public String githubUrl;
-    @TextIndexed(weight=2) public List<String> tags;
+    public String title;
+    public String githubUrl;
+    public List<String> tags;
 
 
     public Project(){}
