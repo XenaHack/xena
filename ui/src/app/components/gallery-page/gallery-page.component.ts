@@ -16,6 +16,15 @@ export class GalleryPageComponent implements OnInit {
 		) { }
 
 	ngOnInit() {
-  }
+	}
+	
+	onChildNotify(filters):void{
+		// if (message === 'save rule clicked'){
+			for (let i = 0; i<filters.length; i++){
+				console.log(filters[i]);
+			}
+		// }
+
+	}
 
 }

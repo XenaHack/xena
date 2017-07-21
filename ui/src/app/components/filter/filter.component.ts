@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -6,6 +6,9 @@ import { Component, ElementRef, OnInit } from '@angular/core';
   styleUrls: ['./filter.component.css']
 })
 export class FilterComponent implements OnInit {
+
+    @Output() notify: EventEmitter<string> = new EventEmitter();
+
 
 	showFilter: boolean = true;
 
@@ -22,6 +25,14 @@ export class FilterComponent implements OnInit {
   expandFilter() {
     this.showFilter = !this.showFilter;
 
+  }
+
+  search() {
+    var filters = "";
+    filters = filters + "whoa";
+    filters = filters + "yay";
+
+    this.notify.emit(filters);
   }
 
 }
