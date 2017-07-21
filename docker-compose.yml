@@ -1,25 +1,24 @@
 version: '2' 
 
 services:
-  ui:
-    build: ui
-    ports:
-      - "4200:4200" 
-    # restart: always
+#  ui:
+#    build: ui
+#    ports:
+#      - "4200:4200" 
+# restart: always
 
-  projectService:
-    build: projectService
+  xena-backend:
+    build: backend
     ports:
-      - "3000:3000"
+      - "8080:8080"
     links:
       - db 
-    # restart: always
-  feedService:
-    build: feedService
-    ports:
-      - "3001:3001"
+    depends_on:
+      - db
+    restart: always
   db:
-    image: mongo:3 
+    image: mongo:3
+    container_name: db 
     ports:
       - "27017:27017" 
-    # restart: always
+    restart: always
