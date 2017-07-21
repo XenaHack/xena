@@ -1,5 +1,6 @@
 h4{
 	display:inline-block;
+	cursor: pointer;
 }
 
 nav {
@@ -20,39 +21,3 @@ ul.navbar-right>li:hover{
 	border-bottom: 4px solid pink;
 }
 
-/*.dropdown:hover .dropcontent, 
-.dropcontent a{
-	display: block;
-} 
-
-.dropdown:hover .dropcontent{
-	position: absolute;
-}
-
-.dropcontent{
-	display: none;
-	position: absolute;
-}
-
-.dropcontent:hover{
-	display:block;
-	position: relative;
-}
-
-.dropcontent{
-	background-color: rgba(255,255,255,0.7);
-	font-size: 65%;
-	color: #333;
-	padding:3px;
-	font-weight: bold;
-}
-
-.dropcontent a{
-	padding-top:5px;
-	padding-bottom: 5px;
-}
-
-.dropcontent a:hover {
-	color: pink;
-}
-*/
