@@ -6,6 +6,7 @@ package xena.hack.projectService;
 
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
@@ -17,9 +18,9 @@ public class Project {
     @Id
     public String id;
 
-    public String title;
-    public String githubUrl;
-    public List<String> tags;
+    @TextIndexed public String title;
+    @TextIndexed public String githubUrl;
+    @TextIndexed(weight=2) public List<String> tags;
 
 
     public Project(){}
