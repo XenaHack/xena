@@ -1,5 +1,5 @@
-POST http://localhost:8080/project/create
 ```
+POST http://localhost:8080/project/create
 {
   "title":"Xena Microservice",
   "githubUrl":"https://github.com/whoisjeff/xena",
@@ -15,8 +15,8 @@ GET http://localhost:8080/project/get/tags/[angularjs, k]
 
 
 
-POST http://localhost:8080/post/create
 ```
+POST http://localhost:8080/post/create
 {
   "message":"I need help w/ this one problem in my spring boot app",
   "tags": ["springBoot", "probs"]
