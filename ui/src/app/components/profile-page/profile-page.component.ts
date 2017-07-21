@@ -13,6 +13,11 @@ export class ProfilePageComponent implements OnInit {
 
   constructor() { }
 
+	title =  "Beyonce";
+	tags = ["Web Dev", "Frontend Dev", "Angular", "SpringBoot"];
+	blurb = "I am a frontend developer with UX/UI experience";
+
+
   ngOnInit() {
   }
 

@@ -9,6 +9,7 @@ services:
 
   projectService:
     build: projectService
+    container_name: projectservice
     ports:
       - "3000:3000"
     links:
@@ -16,6 +17,7 @@ services:
     # restart: always
   feedService:
     build: feedService
+    container_name: feedservice
     ports:
       - "3001:3001"
   db:
