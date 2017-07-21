@@ -37,4 +37,8 @@ public class PostService {
     public void deletePost(String postId) {
         repository.delete(this.get(postId));
     }
+
+    public List<Post> all() {
+        return repository.findAll();
+    }
 }

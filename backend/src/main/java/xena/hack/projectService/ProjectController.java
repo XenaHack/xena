@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
+import xena.hack.feedService.Post;
 
 import java.util.List;
 
@@ -38,6 +39,11 @@ public class ProjectController {
     @RequestMapping(value = "/get/project/[{projectId}]", method = RequestMethod.DELETE)
     public void deleteProject(@PathVariable String projectId) {
         projService.deleteProject(projectId);
+    }
+
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    public List<Project> all() {
+        return projService.all();
     }
 
 }
