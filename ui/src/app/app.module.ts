@@ -8,7 +8,6 @@ import { GalleryPageComponent } from './components/gallery-page/gallery-page.com
 import { FilterComponent } from './components/filter/filter.component';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
-import { BioComponent } from './components/bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { BioComponent } from './components/bio/bio.component';
     GalleryPageComponent,
     FilterComponent,
     ProfilePageComponent,
-    ProjectPageComponent,
-    BioComponent
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
