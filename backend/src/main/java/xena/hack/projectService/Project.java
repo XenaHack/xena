@@ -21,14 +21,16 @@ public class Project {
     public String title;
     public String githubUrl;
     public List<String> tags;
+    public String description;
 
 
     public Project(){}
 
-    public Project(String title, String githubUrl, List<String> tags){
+    public Project(String title, String githubUrl, List<String> tags, String description){
         this.title = title;
         this.githubUrl = githubUrl;
         this.tags = tags;
+        this.description = description;
 
     }
 
