@@ -14,6 +14,7 @@
     position: relative;
 }
 
+
 /* Project Block*/
 #projContainer{
 	margin-bottom: 50px;
@@ -76,7 +77,12 @@
 	text-align: center;
 }
 
+
 .btn-view:hover, 
 .btn-view:focus{
 	background-color: #8498d3;
+}
+
+.container-fluid{
+	padding:0;
 }
