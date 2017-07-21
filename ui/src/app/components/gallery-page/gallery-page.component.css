@@ -1,12 +1,12 @@
 /* Banner */
-.video-wrapper{
+.slider-wrapper{
 	margin: 0px -15px 0px -15px;
     width: 100vw;
     height: 450px;
     overflow: hidden;
 }
 
-.video-wrapper img.gallery-feature-img{
+.slider-wrapper img.gallery-feature-img{
 	top: 50%;
     left: 0;
     width: 100%;

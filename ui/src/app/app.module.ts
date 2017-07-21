@@ -5,11 +5,14 @@ import { RouterModule }   from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './components/app-component/app.component';
 import { GalleryPageComponent } from './components/gallery-page/gallery-page.component';
+import { ProjectPageComponent } from './components/project-profile/project-profile.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,

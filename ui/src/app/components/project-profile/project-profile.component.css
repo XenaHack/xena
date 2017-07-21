@@ -1,0 +1,19 @@
+/* Banner */
+.banner-wrapper{
+	margin: 0px -15px 0px -15px;
+    width: 100vw;
+    height: 450px;
+    overflow: hidden;
+}
+
+.banner-wrapper img#gallery-feature-img{
+	top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#project-profile-user{
+	
+}
