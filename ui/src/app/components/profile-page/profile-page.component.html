@@ -2,20 +2,19 @@
 
 	<div class=row>
 		<div class="col-md-12 col-sm-12">
-			<img src="http://loremflickr.com/200/200/beyonce/">
+			<a routerLink="/profile"><img src="../../assets/beyonce2.jpg" id="project-profile-user"></a>
+			<div class="bio">
+				<h3>{{title}} ( {{age}} years old ) </h3>
+				<div class="tag-section" *ngFor = "let tag of tags">
+					<button class="btn btn-tags" id="view-project">{{tag}}</button>
+				</div>
+				<p>{{blurb}}</p>
+			</div>
 		</div>
 	</div>
 
 	<div class=row>
 		<div class="col-md-6 col-sm-6">
-			<div class=row>
-				<div class="col-md-12 col-sm-12 bio">
-					<h3>{{title}}</h3>
-					<h4>{{tags}}</h4>
-					<p>{{blurb}}</p>
-					
-				</div>
-			</div>
 			<div class=row>
 				<div class="col-md-12 col-sm-12">
 					<h3>Featured Project</h3>
@@ -25,55 +24,12 @@
 			</div>
 		</div>
 
-		<div class="col-md-6 col-sm-6" id=profile-feed>
-			<div class="well post">
-				<h3>
-					blog post
-				</h3>
-
-				<p> hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post </p>
+		<div class="col-md-6 col-sm-6" id="profile-feed">
+			<div class="blog-block" *ngFor = "let post of posts">
+				<h3>{{post.title}}</h3>
+				<p> {{post.time}}</p>
+				<p> {{post.post}}</p>
 			</div>
-
-			<div class="well post">
-				<h3>
-					blog post
-				</h3>
-
-				<p> hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post </p>
-			</div>
-
-			<div class="well post">
-				<h3>
-					blog post
-				</h3>
-
-				<p> hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post </p>
-			</div>
-
-			<div class="well post">
-				<h3>
-					blog post
-				</h3>
-
-				<p> hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post </p>
-			</div>
-
-			<div class="well post">
-				<h3>
-					blog post
-				</h3>
-
-				<p> hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post hi this is a blog post </p>
-			</div>
-
 		</div>
-
-
-
-		
-
-		
 	</div>
-
-
 </div>
