@@ -13,4 +13,5 @@ import java.util.List;
 @Repository
 public interface PostRepository extends MongoRepository<Post, String> {
     List<Post> findByTagsIn(List<String> tags);
+    List<Post> findAll();
 }

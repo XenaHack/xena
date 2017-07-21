@@ -5,6 +5,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+import xena.hack.feedService.Post;
 
 import javax.management.Query;
 import java.util.ArrayList;
@@ -37,5 +38,9 @@ public class ProjectService {
 
     public void deleteProject(String projectId) {
         repository.delete(this.get(projectId));
+    }
+
+    public List<Project> all() {
+        return repository.findAll();
     }
 }

@@ -26,6 +26,11 @@ public class PostController {
         return postService.create(post);
     }
 
+    @RequestMapping(value = "/all", method = RequestMethod.GET)
+    public List<Post> all() {
+        return postService.all();
+    }
+
 
     @RequestMapping( value = "/get/{postId}", method = RequestMethod.GET)
     public Post get(@PathVariable String postId) {
