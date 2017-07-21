@@ -2,11 +2,11 @@
 .banner-wrapper{
 	margin: 0px -15px 0px -15px;
     width: 100vw;
-    height: 450px;
+    height: 300px;
     overflow: hidden;
 }
 
-.banner-wrapper img#gallery-feature-img{
+.banner-wrapper img#project-profile-img{
 	top: 50%;
     left: 0;
     width: 100%;
@@ -15,5 +15,18 @@
 }
 
 #project-profile-user{
-	
+    width: 200px;
+    clip-path: circle(100px at center);
+    margin: -100px auto 0 auto;
+    display: block;
+    position: relative;
+    z-index: 2
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }

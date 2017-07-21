@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project-profile',
-  templateUrl: './project-profile.component.html',
-  styleUrls: ['./project-profile.component.css']
+  templateUrl: './project-page.component.html',
+  styleUrls: ['./project-page.component.css']
 })
 
 export class ProjectPageComponent implements OnInit {
