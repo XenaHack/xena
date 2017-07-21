@@ -34,4 +34,8 @@ public class ProjectService {
     public List<Project> getProjectsFromTags(List<String> tags){
        return repository.findByTagsIn(tags);
     }
+
+    public void deleteProject(String projectId) {
+        repository.delete(this.get(projectId));
+    }
 }

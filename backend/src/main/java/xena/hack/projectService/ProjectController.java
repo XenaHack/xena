@@ -13,6 +13,7 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/project")
 public class ProjectController {
 
     @Autowired
@@ -32,6 +33,11 @@ public class ProjectController {
     @RequestMapping(value = "/get/tags/[{tags}]", method = RequestMethod.GET)
     public List<Project> getProjectsFromTags(@PathVariable List<String> tags) {
         return projService.getProjectsFromTags(tags);
+    }
+
+    @RequestMapping(value = "/get/project/[{projectId}]", method = RequestMethod.DELETE)
+    public void deletePost(@PathVariable String projectId) {
+        projService.deleteProject(projectId);
     }
 
 }
