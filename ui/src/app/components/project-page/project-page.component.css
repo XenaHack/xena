@@ -70,6 +70,11 @@ h2{
     color: #4f6193;
 }
 
+.project-menu{
+    position: fixed;
+    margin-top: 32px;
+}
+
 /* screenshots */
 .project-screenshots-wrapper{
     min-height: 240px;
@@ -97,6 +102,34 @@ h2{
 }
 
 /* Comments */
+.panel-default>.panel-heading {
+     background-color: #8498d3; 
+     color: white;
+}
+
+.panel-default>.panel-heading .usr-name{
+    color: white;
+}
+
+#project-title, 
+.usr-bio-brief,
+#project-description{
+    margin: 15px 0px;
+}
+
+#usr-propic-link:hover{
+    text-decoration: none;
+}
+
+.usr-propic-round{
+    width: 30px;
+    clip-path: circle(15px at center);
+}
+
+.usr-name{
+    display: inline;
+}
+
 .btn-submit{
     background-color: #9ba7d3;
     color: white;
@@ -112,3 +145,14 @@ h2{
     background-color: #8498d3;
 }
 
+.btn-submit.btn-reply{
+    width: auto;
+    background-color: #4f6193;
+    color: white;
+    float: right;
+    padding: 5px 20px;
+}
+
+hr{
+    margin-top: 30px;
+}

@@ -13,4 +13,6 @@ p{
 	font-size: 13px;
 }
 
-
+a, a:hover{
+	color: rgb(51, 51, 51);
+}
