@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule }   from '@angular/router';
+import { HttpModule } from "@angular/http";
 
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './components/app-component/app.component';
@@ -21,7 +22,8 @@ import { BioComponent } from './components/bio/bio.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
    // RouterModule ///<<<<<<========== kinda breaks things
     ],
   providers: [],
