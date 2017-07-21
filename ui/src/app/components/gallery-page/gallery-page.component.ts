@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'; 
 
-import { Bio } from '../bio/bio';
-
-import { BioComponent }  from '../bio/bio.component'
 
 
 @Component({
