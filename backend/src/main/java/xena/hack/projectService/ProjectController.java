@@ -36,7 +36,7 @@ public class ProjectController {
     }
 
     @RequestMapping(value = "/get/project/[{projectId}]", method = RequestMethod.DELETE)
-    public void deletePost(@PathVariable String projectId) {
+    public void deleteProject(@PathVariable String projectId) {
         projService.deleteProject(projectId);
     }
 
