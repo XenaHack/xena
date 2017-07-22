@@ -1,32 +1,36 @@
-<button id=showFilter (click)=expandFilter()>Filter</button>
+<div class=row style="padding:10px">
+	<div class="col-md-8 col-md-offset-4">
+		<button id=showFilter (click)=expandFilter()>Filter</button>
 
-<div *ngIf="showFilter" >
-<!-- <div class="filterContainer" (click)="showFilter = !showFilter" > -->
-	<div>
-		<h4>Level</h4>
-		<input type="checkbox" [checked]="middleSchool" (change)="middleSchool = !middleSchool"/>Middle School
-		<input type="checkbox" [checked]="highSchool" (change)="highSchool = !highSchool"/>High School
-		<input type="checkbox" [checked]="earlyProfessional" (change)="earlyProfessional = !earlyProfessional"/>Early Professional
-		<input type="checkbox" [checked]="professional" (change)="professional = !professional"/>Professional
+
+	<div *ngIf="showFilter" >
+	<!-- <div class="filterContainer" (click)="showFilter = !showFilter" > -->
+		<div>
+			<h4>Level</h4>
+			<input type="checkbox" [checked]="middleSchool" (change)="middleSchool = !middleSchool"/>Middle School
+			<input type="checkbox" [checked]="highSchool" (change)="highSchool = !highSchool"/>High School
+			<input type="checkbox" [checked]="earlyProfessional" (change)="earlyProfessional = !earlyProfessional"/>Early Professional
+			<input type="checkbox" [checked]="professional" (change)="professional = !professional"/>Professional
+		</div>
+
+
+
+		<div>
+			<h4>Tech</h4>
+			<input type="checkbox" [checked]="angular" (change)="angular = !angular"/>Angular
+			<input type="checkbox" [checked]="angularjs" (change)="angularjs = !angularjs"/>AngularJS
+			<input type="checkbox" [checked]="react" (change)="react = !react"/>React
+			<input type="checkbox" [checked]="java" (change)="java = !java"/>Java
+			<input type="checkbox" [checked]="springboot" (change)="springboot = !springboot"/>Springboot
+			<input type="checkbox" [checked]="mongodb" (change)="mongodb = !mongodb"/>MongoDB
+			<input type="checkbox" [checked]="elasticSearch" (change)="elasticSearch = !elasticSearch"/>Elasticsearch	
+			<input type="checkbox" [checked]="node" (change)="node = !node"/>Node
+			<input type="checkbox" [checked]="expressJS" (change)="expressJS = !expressJS"/>ExpressJS
+			<input type="checkbox" [checked]="docker" (change)="docker = !docker"/>Docker
+
+		</div>
 	</div>
-
-
-
-	<div>
-		<h4>Tech</h4>
-		<input type="checkbox" [checked]="angular" (change)="angular = !angular"/>Angular
-		<input type="checkbox" [checked]="angularjs" (change)="angularjs = !angularjs"/>AngularJS
-		<input type="checkbox" [checked]="react" (change)="react = !react"/>React
-		<input type="checkbox" [checked]="java" (change)="java = !java"/>Java
-		<input type="checkbox" [checked]="springboot" (change)="springboot = !springboot"/>Springboot
-		<input type="checkbox" [checked]="mongodb" (change)="mongodb = !mongodb"/>MongoDB
-		<input type="checkbox" [checked]="elasticSearch" (change)="elasticSearch = !elasticSearch"/>Elasticsearch	
-		<input type="checkbox" [checked]="node" (change)="node = !node"/>Node
-		<input type="checkbox" [checked]="expressJS" (change)="expressJS = !expressJS"/>ExpressJS
-		<input type="checkbox" [checked]="docker" (change)="docker = !docker"/>Docker
+	<button (click)="search()">ExampleSearch</button>
 
 	</div>
-<!-- </div> -->
 </div>
-<button (click)="search()">ExampleSearch</button>
-
