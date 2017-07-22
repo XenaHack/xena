@@ -13,7 +13,7 @@ export class ProfilePageComponent implements OnInit {
   constructor() { }
 
 	title =  "Beyonce";
-	level = "10th grade";
+	level = "High School";
 	tags = ["Web Dev", "Frontend Dev", "Angular", "SpringBoot"];
 	blurb = "I am a senior frontend developer specialized in AngularJS 2 with UX/UI experience";
 	posts = [
