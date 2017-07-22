@@ -7,6 +7,7 @@ import { ProfilePageComponent } from './components/profile-page/profile-page.com
 import { ProjectPageComponent } from './components/project-page/project-page.component'
 import { FeedPageComponent } from './components/feed-page/feed-page.component'
 
+
 const routes: Routes = [
 	{
     path: 'gallery', 
@@ -28,12 +29,7 @@ const routes: Routes = [
   {
     path: 'feed', component: FeedPageComponent,
     pathMatch: 'full'
-  },
-	{
-    path: '',
-    redirectTo: '/',
-    pathMatch: 'full'
-	}
+  }
 ];
 
 @NgModule({
