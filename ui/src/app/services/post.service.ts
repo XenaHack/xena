@@ -34,6 +34,9 @@ export class PostService {
           .map((res: Response) => res.json());
     }
 
-
+    getAllPosts(){
+        return this.http.get(this.postUrl + '/all', {})
+        .map((res: Response) => res.json());
+    }
 
 }
