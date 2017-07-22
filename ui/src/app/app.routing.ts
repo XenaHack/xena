@@ -5,6 +5,8 @@ import { AppComponent } from './components/app-component/app.component';
 import { GalleryPageComponent } from './components/gallery-page/gallery-page.component'
 import { ProfilePageComponent } from './components/profile-page/profile-page.component'
 import { ProjectPageComponent } from './components/project-page/project-page.component'
+import { FeedPageComponent } from './components/feed-page/feed-page.component'
+
 
 const routes: Routes = [
 	{
@@ -24,11 +26,10 @@ const routes: Routes = [
     path: 'project', component: ProjectPageComponent,
     pathMatch: 'full'
   },
-	{
-    path: '',
-    redirectTo: '/',
+  {
+    path: 'feed', component: FeedPageComponent,
     pathMatch: 'full'
-	}
+  }
 ];
 
 @NgModule({
