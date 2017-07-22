@@ -16,3 +16,7 @@ p{
 a, a:hover{
 	color: rgb(51, 51, 51);
 }
+
+span{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
