@@ -1,18 +1,41 @@
-/**{
-	border: dotted 1px #999;
-}
-*/
-
-
-.container-fluid{
+.container{
 	margin-top:50px;
-	
+
 }
 
-
-img{
-	border-radius: 50%;
-	margin:0 auto;
-	transform: translateX(50%);
+.bio{
+	text-align: center;
+	max-width: 50%;
+    margin: 0 auto;
 }
 
+#project-profile-user{
+	width: 200px;
+    clip-path: circle(100px at center);
+    margin: 0 auto;
+    display: block;
+    z-index: 2
+}
+
+.tag-section{
+    display: inline;
+}
+
+.tag-section .btn-tags{
+    background-color: transparent;
+    color: #8498d3;
+    padding: 5px 10px;
+    border: 1px solid #8498d3;
+    border-radius: 24px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px 15px 0;
+}
+
+/* blog */
+.blog-block{
+	background-color: white;
+	padding: 15px 30px 30px 30px;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
+}
