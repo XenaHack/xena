@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BioComponent } from '../bio/bio.component';
+// import { BioComponent } from '../bio/bio.component';
 import {PostService} from '../../services/post.service'
 
 
@@ -16,6 +16,11 @@ export class ProfilePageComponent implements OnInit {
 
   constructor(
     private postService : PostService
+
+	){}
+    // posts: Array<Object>;
+
+
 
 	title =  "Beyonce";
 	age = "19";
@@ -44,13 +49,14 @@ export class ProfilePageComponent implements OnInit {
 	]
 
   ngOnInit() {
-    this.getAllPosts();
+    this.getEveryPost();
   }
 
-  getAllPosts(){
+  getEveryPost(){
     this.postService.getAllPosts().subscribe(
       response => {
-        console.log(response);
+				console.log(response);
+				// this.posts = response;
       }
     )
   }
