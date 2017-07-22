@@ -2,17 +2,19 @@
 	border: dotted 1px #999;
 }
 */
-
-
-.container-fluid{
+.container{
+	width:90%;
 	margin-top:50px;
-	
+
 }
 
 
 img{
 	border-radius: 50%;
 	margin:0 auto;
-	transform: translateX(50%);
+	display: block;
 }
 
+.post{
+
+}

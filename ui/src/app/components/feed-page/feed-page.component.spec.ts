@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BioComponent } from './bio.component';
+import { FeedPageComponent } from './feed-page.component';
 
-describe('BioComponent', () => {
-  let component: BioComponent;
-  let fixture: ComponentFixture<BioComponent>;
+describe('FeedPageComponent', () => {
+  let component: FeedPageComponent;
+  let fixture: ComponentFixture<FeedPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BioComponent ]
+      declarations: [ FeedPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BioComponent);
+    fixture = TestBed.createComponent(FeedPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

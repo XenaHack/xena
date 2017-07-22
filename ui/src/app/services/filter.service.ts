@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 export class FilterService {
 
 
-	private feedUrl = 'http://localhost:3001/api'; //<- update url
+	private feedUrl = 'http://localhost:3001/post'; //<- update url
 
 	private headers = new Headers({'Content-Type': 'application/json'});
 
