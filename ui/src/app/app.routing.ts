@@ -6,6 +6,7 @@ import { GalleryPageComponent } from './components/gallery-page/gallery-page.com
 import { ProfilePageComponent } from './components/profile-page/profile-page.component'
 import { ProjectPageComponent } from './components/project-page/project-page.component'
 
+
 const routes: Routes = [
 	{
     path: 'gallery', 
@@ -20,6 +21,10 @@ const routes: Routes = [
     path: 'profile', component: ProfilePageComponent,
     pathMatch: 'full'
   }, 
+  {
+    path: 'project', component: ProjectPageComponent,
+    pathMatch: 'full'
+  },
   {
     path: 'project', component: ProjectPageComponent,
     pathMatch: 'full'
