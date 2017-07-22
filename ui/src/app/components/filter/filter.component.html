@@ -1,7 +1,7 @@
 <button id=showFilter (click)=expandFilter()>Filter</button>
 
 <div *ngIf="showFilter" >
-<div class="filterContainer" [ngClass]="{'expandHeight': showFilter}" (click)="showFilter = !showFilter" >
+<!-- <div class="filterContainer" (click)="showFilter = !showFilter" > -->
 	<div>
 		<h4>Level</h4>
 		<input type="checkbox"/>Middle School
@@ -26,6 +26,7 @@
 		<input type="checkbox"/>Docker
 
 	</div>
+<!-- </div> -->
 </div>
-</div>
+<button (click)="search()">ExampleSearch</button>
 
