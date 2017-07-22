@@ -4,26 +4,26 @@
 <!-- <div class="filterContainer" (click)="showFilter = !showFilter" > -->
 	<div>
 		<h4>Level</h4>
-		<input type="checkbox"/>Middle School
-		<input type="checkbox"/>High School
-		<input type="checkbox"/>Early Professional
-		<input type="checkbox"/>Professional
+		<input type="checkbox" [checked]="middleSchool" (change)="middleSchool = !middleSchool"/>Middle School
+		<input type="checkbox" [checked]="highSchool" (change)="highSchool = !highSchool"/>High School
+		<input type="checkbox" [checked]="earlyProfessional" (change)="earlyProfessional = !earlyProfessional"/>Early Professional
+		<input type="checkbox" [checked]="professional" (change)="professional = !professional"/>Professional
 	</div>
 
 
 
 	<div>
 		<h4>Tech</h4>
-		<input type="checkbox"/>Angular
-		<input type="checkbox"/>AngularJS
-		<input type="checkbox"/>React
-		<input type="checkbox"/>Java
-		<input type="checkbox"/>Springboot
-		<input type="checkbox"/>MongoDB
-		<input type="checkbox"/>Elasticsearch	
-		<input type="checkbox"/>Node
-		<input type="checkbox"/>ExpressJS
-		<input type="checkbox"/>Docker
+		<input type="checkbox" [checked]="angular" (change)="angular = !angular"/>Angular
+		<input type="checkbox" [checked]="angularjs" (change)="angularjs = !angularjs"/>AngularJS
+		<input type="checkbox" [checked]="react" (change)="react = !react"/>React
+		<input type="checkbox" [checked]="java" (change)="java = !java"/>Java
+		<input type="checkbox" [checked]="springboot" (change)="springboot = !springboot"/>Springboot
+		<input type="checkbox" [checked]="mongodb" (change)="mongodb = !mongodb"/>MongoDB
+		<input type="checkbox" [checked]="elasticSearch" (change)="elasticSearch = !elasticSearch"/>Elasticsearch	
+		<input type="checkbox" [checked]="node" (change)="node = !node"/>Node
+		<input type="checkbox" [checked]="expressJS" (change)="expressJS = !expressJS"/>ExpressJS
+		<input type="checkbox" [checked]="docker" (change)="docker = !docker"/>Docker
 
 	</div>
 <!-- </div> -->
