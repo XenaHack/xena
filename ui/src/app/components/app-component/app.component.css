@@ -1,6 +1,9 @@
 h4{
 	display:inline-block;
 	cursor: pointer;
+	font-family:'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	margin:0;
 }
 
 nav {
