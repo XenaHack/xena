@@ -18,13 +18,13 @@ export class ProfilePageComponent implements OnInit {
 	blurb = "I am a senior frontend developer specialized in AngularJS 2 with UX/UI experience";
 	posts = [
 		{
-			title: "Reflecting on My First Job out of College",
+			title: "Reflecting on my middle school internship",
 			time: "2017/07/18",
 			post: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur, dolor sed cursus bibendum, justo lorem ornare sapien, et rhoncus lorem nibh a elit. Nullam malesuada augue fermentum justo finibus, vel interdum mauris finibus. Vestibulum tellus elit, posuere et lectus at, bibendum luctus eros. Suspendisse lobortis justo rutrum, pulvinar enim sed, congue tellus. Nulla rhoncus est quis velit rutrum tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 			likes: 23,
 			comments: 2
 		},{
-			title: "Free Online Sources I recommend for High-School-Level Developers",
+			title: "Free Online Sources I recommend for Middle-School-Level Developers",
 			time: "2016/03/16",
 			post: "Vestibulum sodales blandit purus rutrum sagittis. Aenean eget nunc accumsan, mattis metus vitae, posuere leo. Donec rhoncus dolor sem, nec bibendum neque dapibus pretium.",
 			likes: 2,
