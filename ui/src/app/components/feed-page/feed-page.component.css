@@ -1,0 +1,53 @@
+/**{
+	border:dotted 1px #999;
+}
+*/
+.container{
+	margin-top:70px;
+}
+img{
+    width: 100px;
+    display: block;
+    z-index: 2;
+    border-radius: 50%;
+   margin:10px;
+
+
+}
+
+.createPost{
+	padding:20px 50px 30px 50px;
+	border:solid 1px #9ba7d3;
+}
+
+.createPost>h4{
+	text-align: center;
+}
+
+figure>img{
+	margin:0 auto;
+}
+
+figcaption{
+	text-align: center;
+}
+
+textarea{
+	appearance:none;
+	background-color:transparent;
+	border: none;
+	width:100%;
+	min-height: 150px;
+}
+
+.post{
+	background-color: white;
+	padding:20px 50px 30px 50px;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.04);
+}
+
+.bio>p{
+	color:#666;
+}
+
+
