@@ -1,3 +1,4 @@
+Project Objects
 ```
 POST http://localhost:8080/project/create
 {
@@ -6,7 +7,8 @@ POST http://localhost:8080/project/create
   "tags": ["angularjs","#springBoot"]
 }
 ```
- 
+
+GET http://localhost:8080/project/all
 
 GET http://localhost:8080/project/get/5971719da7b11b0048fae5e6
 
@@ -14,7 +16,7 @@ GET http://localhost:8080/project/get/5971719da7b11b0048fae5e6
 GET http://localhost:8080/project/get/tags/[angularjs, k]
 
 
-
+POST Objects
 ```
 POST http://localhost:8080/post/create
 {
@@ -22,6 +24,9 @@ POST http://localhost:8080/post/create
   "tags": ["springBoot", "probs"]
 }
 ```
+
+GET http://localhost:8080/project/all
+
 GET http://localhost:8080/post/get/597171cea7b11b0048fae5e7
 
 GET http://localhost:8080/post/get/tags/[probs, springBoot]
