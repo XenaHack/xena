@@ -5,7 +5,6 @@
 
 .bio{
 	text-align: center;
-	max-width: 50%;
     margin: 0 auto;
 }
 
@@ -119,4 +118,15 @@
 .btn-view:hover, 
 .btn-view:focus{
     background-color: #8498d3;
+}
+
+.btn-award{
+    background: transparent; 
+    border: none !important; 
+    padding: 10px !important; 
+    pointer-events: none;
+    color: #555555 !important;
+}
+.num{
+    font-size: 20px;
 }

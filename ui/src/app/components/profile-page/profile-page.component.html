@@ -1,68 +1,99 @@
 <div class="container-fluid container">
-
 	<div class=row>
-		<div class="col-md-12 col-sm-12">
+		<div class="col-md-12 col-sm-12" style="margin-top: 30px;">
 			<a routerLink="/profile"><img src="../../assets/beyonce2.jpg" id="project-profile-user"></a>
 			<div class="bio">
-				<h3>{{title}} ( {{age}} years old ) </h3>
+				<h3>{{title}} ( {{level}} ) </h3>
+				<p>{{blurb}}</p>
+				<div class="tag-section" style="margin: 0 auto; width: 50%; width: 60%; display: block;">
+					<button class="btn btn-tags btn-award" style="margin-right: 30px">1096<br/>Followers</button>
+					<button class="btn btn-tags btn-award" style="margin-right: 30px">85<br/>Projects</button>
+					<button class="btn btn-tags btn-award" style="margin-right: 30px">50<br/>Posts</button>
+					<button class="btn btn-tags btn-award" style="margin-right: 30px">190<br/>Comments Left</button>
+					<button class="btn btn-tags btn-award" style="margin-right: 30px">60<br/>Questions Asked</button>
+				</div>
 				<div class="tag-section" *ngFor = "let tag of tags">
 					<button class="btn btn-tags" id="view-project">{{tag}}</button>
 				</div>
-				<p>{{blurb}}</p>
 			</div>
 		</div>
 	</div>
-
 	<div class=row>
-		<div class="col-md-12">
-			<h3>Featured Project</h3>
-		</div>
-		
-		<div class="col-md-3 col-sm-3">
-			<div class="project-block">
-				<div class="project-image-wrapper">
-					<img src="../../assets/project-picture.png" id="project-image" width="100%"/>
-				</div>
-				<h4 id="project-title">Tiny Thief</h4>
-				<div class="project-tags">
-					<div id="project-tag-1">
-						<span id="project-tag-name"></span>
-					</div>
-				</div>
-				<div id="project-description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed ultrices nunc, at bibendum augue. In hac habitasse platea dictumst. </p>
-				</div>
-				<a routerLink="/project"><button class="btn btn-view" id="view-project">View Project</button></a>
+		<div class="col-sm-6">
+			<div class="col-sm-12">
+				<br/>
+				<br/>
+				<h3 style="color: #613f75">Featured Projects</h3>
+				<hr/>
+				<br/>
 			</div>
-		</div><div class="col-md-3 col-sm-3">
-			<div class="project-block">
-				<div class="project-image-wrapper">
-					<img src="../../assets/project-picture.png" id="project-image" width="100%"/>
-				</div>
-				<h4 id="project-title">Tiny Thief</h4>
-				<div class="project-tags">
-					<div id="project-tag-1">
-						<span id="project-tag-name"></span>
+			<div class="col-sm-6">
+				<div class="project-block">
+					<div class="project-image-wrapper">
+						<img src="../../assets/project-picture.png" id="project-image" width="100%"/>
 					</div>
+					<h4 id="project-title">Tiny Thief</h4>
+					<div class="project-tags">
+						<div id="project-tag-1">
+							<span id="project-tag-name"></span>
+						</div>
+					</div>
+					<div id="project-description">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed ultrices nunc, at bibendum augue. In hac habitasse platea dictumst. </p>
+					</div>
+					<a routerLink="/project"><button class="btn btn-view" id="view-project">View Project</button></a>
 				</div>
-				<div id="project-description">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed ultrices nunc, at bibendum augue. In hac habitasse platea dictumst. </p>
+			</div>
+			<div class="col-sm-6">
+				<div class="project-block">
+					<div class="project-image-wrapper">
+						<img src="../../assets/project-picture.png" id="project-image" width="100%"/>
+					</div>
+					<h4 id="project-title">Tiny Thief</h4>
+					<div class="project-tags">
+						<div id="project-tag-1">
+							<span id="project-tag-name"></span>
+						</div>
+					</div>
+					<div id="project-description">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed ultrices nunc, at bibendum augue. In hac habitasse platea dictumst. </p>
+					</div>
+					<a routerLink="/project"><button class="btn btn-view" id="view-project">View Project</button></a>
 				</div>
-				<a routerLink="/project"><button class="btn btn-view" id="view-project">View Project</button></a>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+			<div class="col-sm-12">
+				<h3 style="color: #613f75">Github Activities</h3>
+				<hr/>
+			</div>
+			<div class="col-sm-12">
+				<img src="../../assets/github.png" style="width: 100%" />
 			</div>
 		</div>
-
-		<div class="col-md-6 col-sm-6" id="profile-feed">
-			<div class="blog-block" *ngFor = "let post of posts">
-				<h3>{{post.title}}</h3>
-				<p> {{post.time}}</p>
-				<p> {{post.post}}</p>
-				<div class="reaction-section">
-					<div class="like-section">
-						<span class="glyphicon glyphicon-heart"><span>{{post.likes}}</span></span>
-					</div>
-					<div class="comment-section">
-						<span class="glyphicon glyphicon-comment"><span>{{post.comments}}</span></span>
+		<div class="col-sm-6">
+			
+			<div class="col-sm-12">
+				<br/>
+				<br/>
+				<h3 style="color: #613f75">Blog Posts</h3>
+				<hr/>
+				<br/>
+			</div>
+			
+			<div class="col-sm-12" id="profile-feed">
+				<div class="blog-block" *ngFor = "let post of posts">
+					<h3>{{post.title}}</h3>
+					<p> {{post.time}}</p>
+					<p> {{post.post}}</p>
+					<div class="reaction-section">
+						<div class="like-section">
+							<span class="glyphicon glyphicon-heart"><span>{{post.likes}}</span></span>
+						</div>
+						<div class="comment-section">
+							<span class="glyphicon glyphicon-comment"><span>{{post.comments}}</span></span>
+						</div>
 					</div>
 				</div>
 			</div>
