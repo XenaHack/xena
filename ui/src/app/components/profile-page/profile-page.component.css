@@ -39,3 +39,12 @@
 	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.04);
     margin-bottom: 30px;
 }
+
+.reaction-section{
+    display: inline;
+}
+
+.like-section,
+.reaction-section{
+    display: inline-block;
+}
